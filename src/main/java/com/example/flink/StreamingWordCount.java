@@ -31,7 +31,7 @@ public class StreamingWordCount {
                     }
                 });
         //按照key分组并聚合
-        DataStream<Tuple2<String, Integer>> result = words.keyBy(0).sum(1);
+        DataStream<Tuple2<String, Integer>> result = words.keyBy(value -> value.f0).sum(1);
         //将结果打印到控制台
         result.print();
         //执行

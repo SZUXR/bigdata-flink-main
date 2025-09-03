@@ -8,8 +8,7 @@
 src/
 ├── main/
 │   ├── java/com/example/flink/
-│   │   ├── DataStreamJob.java      # 基础模板
-│   │   └── StreamingJob.java       # 流处理示例
+│   │   └── StreamingWordCount.java       # 流处理WordCount示例
 │   └── resources/
 │       └── log4j2.properties       # 日志配置
 └── pom.xml                         # Maven 配置
@@ -26,7 +25,7 @@ mvn clean compile
 ```bash
 
 # 运行流处理示例
-mvn exec:java -Dexec.mainClass="com.example.flink.StreamingJob"
+mvn exec:java -Dexec.mainClass="com.example.flink.StreamingWordCount"
 ```
 
 ### 打包项目
