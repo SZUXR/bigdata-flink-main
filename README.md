@@ -1,6 +1,6 @@
-# Flink 1.15.2 快速开始项目
+# Flink 快速开始项目
 
-基于 Apache Flink 1.15.2 的 Maven 项目模板。
+基于 Apache Flink 的 Maven 项目模板。
 
 ## 项目结构
 

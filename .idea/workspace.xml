@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7059a1b-3004-4efc-92d4-4d37303f1d97" name="更改" comment="StreamingWordCount打包并提交到FlinkWebUI" />
+    <list default="true" id="c7059a1b-3004-4efc-92d4-4d37303f1d97" name="更改" comment="StreamingWordCount打包并提交到FlinkWebUI">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/CollectionsSourceConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorJsonValueOnly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorKeyAndValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/TcpSocketSourceConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/model/FlinkUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,35 +49,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Unknown [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.bigdata-flink-main [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.bigdata-flink-main [package].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;应用程序.DataStreamJob.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.StreamingWordCount.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.WordCountJob.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.Unknown [clean].executor": "Run",
+    "Maven.Unknown [package].executor": "Run",
+    "Maven.bigdata-flink-main [clean].executor": "Run",
+    "Maven.bigdata-flink-main [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "应用程序.CollectionsSourceConnector.executor": "Run",
+    "应用程序.DataStreamJob.executor": "Run",
+    "应用程序.KafkaSourceConnectorKeyAndValue.executor": "Run",
+    "应用程序.StreamingWordCount.executor": "Run",
+    "应用程序.TcpSocketSourceConnector.executor": "Run",
+    "应用程序.WordCountJob.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.flink" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.StreamingWordCount">
+  <component name="RunManager" selected="应用程序.KafkaSourceConnectorKeyAndValue">
+    <configuration name="CollectionsSourceConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.source.CollectionsSourceConnector" />
+      <module name="bigdata-flink-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataStreamJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamJob" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.flink.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaSourceConnectorKeyAndValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.source.KafkaSourceConnectorKeyAndValue" />
+      <module name="bigdata-flink-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,8 +127,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TcpSocketSourceConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.source.TcpSocketSourceConnector" />
+      <module name="bigdata-flink-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.KafkaSourceConnectorKeyAndValue" />
+        <item itemvalue="应用程序.CollectionsSourceConnector" />
+        <item itemvalue="应用程序.TcpSocketSourceConnector" />
         <item itemvalue="应用程序.StreamingWordCount" />
         <item itemvalue="应用程序.DataStreamJob" />
       </list>
@@ -105,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756878111425</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="StreamingWordCount打包并提交到FlinkWebUI">
+      <option name="closed" value="true" />
+      <created>1756878168663</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756878168663</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
