@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7059a1b-3004-4efc-92d4-4d37303f1d97" name="更改" comment="StreamingWordCount打包并提交到FlinkWebUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/CollectionsSourceConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorJsonValueOnly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorKeyAndValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/TcpSocketSourceConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/model/FlinkUser.java" afterDir="false" />
+    <list default="true" id="c7059a1b-3004-4efc-92d4-4d37303f1d97" name="更改" comment="DataStream API">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/sink/StarRocksSinkConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/transform/DataStreamUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/transform/KeyByTransformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/transform/KeyedStreamRollingAggregation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/transform/MapTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorJsonValueOnly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorJsonValueOnly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorKeyAndValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorKeyAndValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flink/model/FlinkUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/Model/FlinkUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,13 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "应用程序.CollectionsSourceConnector.executor": "Run",
     "应用程序.DataStreamJob.executor": "Run",
+    "应用程序.DataStreamUnion.executor": "Run",
+    "应用程序.KafkaSourceConnectorJsonValueOnly.executor": "Run",
     "应用程序.KafkaSourceConnectorKeyAndValue.executor": "Run",
+    "应用程序.KafkaSourceConnectorStringValueOnly.executor": "Run",
+    "应用程序.KeyByTransformation.executor": "Run",
+    "应用程序.KeyedStreamRollingAggregation.executor": "Run",
+    "应用程序.MapTransformation.executor": "Run",
     "应用程序.StreamingWordCount.executor": "Run",
     "应用程序.TcpSocketSourceConnector.executor": "Run",
     "应用程序.WordCountJob.executor": "Run"
@@ -74,13 +82,13 @@
       <recent name="com.example.flink" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.KafkaSourceConnectorKeyAndValue">
-    <configuration name="CollectionsSourceConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.source.CollectionsSourceConnector" />
+  <component name="RunManager" selected="应用程序.StarRocksSinkConnector">
+    <configuration name="DataStreamUnion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.transform.DataStreamUnion" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flink.DataStreamAPI.source.*" />
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.transform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataStreamJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamJob" />
+    <configuration name="KeyByTransformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.transform.KeyByTransformation" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flink.*" />
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.transform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaSourceConnectorKeyAndValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.source.KafkaSourceConnectorKeyAndValue" />
+    <configuration name="KeyedStreamRollingAggregation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.transform.KeyedStreamRollingAggregation" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flink.DataStreamAPI.source.*" />
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.transform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamingWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.StreamingWordCount" />
+    <configuration name="MapTransformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.transform.MapTransformation" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flink.*" />
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.transform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TcpSocketSourceConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.source.TcpSocketSourceConnector" />
+    <configuration name="StarRocksSinkConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.sink.StarRocksSinkConnector" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flink.DataStreamAPI.source.*" />
+          <option name="PATTERN" value="com.example.flink.DataStreamAPI.sink.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.KafkaSourceConnectorKeyAndValue" />
-        <item itemvalue="应用程序.CollectionsSourceConnector" />
-        <item itemvalue="应用程序.TcpSocketSourceConnector" />
-        <item itemvalue="应用程序.StreamingWordCount" />
-        <item itemvalue="应用程序.DataStreamJob" />
+        <item itemvalue="应用程序.StarRocksSinkConnector" />
+        <item itemvalue="应用程序.DataStreamUnion" />
+        <item itemvalue="应用程序.KeyedStreamRollingAggregation" />
+        <item itemvalue="应用程序.KeyByTransformation" />
+        <item itemvalue="应用程序.MapTransformation" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756878168663</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DataStream API">
+      <option name="closed" value="true" />
+      <created>1756953923237</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756953923237</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Flink工程初始化" />
     <MESSAGE value="StreamingWordCount打包并提交到FlinkWebUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="StreamingWordCount打包并提交到FlinkWebUI" />
+    <MESSAGE value="DataStream API" />
+    <option name="LAST_COMMIT_MESSAGE" value="DataStream API" />
   </component>
 </project>

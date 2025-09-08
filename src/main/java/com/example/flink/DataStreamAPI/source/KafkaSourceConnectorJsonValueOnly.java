@@ -1,8 +1,7 @@
 package com.example.flink.DataStreamAPI.source;
 
-import com.example.flink.model.FlinkUser;
+import com.example.flink.Model.FlinkUser;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
-import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.connector.kafka.source.KafkaSource;
 import org.apache.flink.connector.kafka.source.enumerator.initializer.OffsetsInitializer;

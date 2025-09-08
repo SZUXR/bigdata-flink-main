@@ -1,4 +1,4 @@
-package com.example.flink.model;
+package com.example.flink.Model;
 
 import lombok.Data;
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.annotation.JsonProperty;
