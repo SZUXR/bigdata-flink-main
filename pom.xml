@@ -105,8 +105,7 @@ under the License.
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-json</artifactId>
-			<version>1.16.1</version>
-<!--			<scope>provided</scope>-->
+			<version>${flink.version}</version>
 		</dependency>
 
 		<!-- JSON处理 -->
@@ -158,13 +157,6 @@ under the License.
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.33</version>
-		</dependency>
-
-		<!-- JDBC Connector for StarRocks -->
-		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-connector-jdbc</artifactId>
-			<version>1.15.2</version>
 		</dependency>
 
 

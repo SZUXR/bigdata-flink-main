@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7059a1b-3004-4efc-92d4-4d37303f1d97" name="更改" comment="DataStream API">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/FlinkSQL/CumulateWindowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/FlinkSQL/HopWindowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/FlinkSQL/MyTableFunctionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/FlinkSQL/RegularJoinDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/FlinkSQL/TableStreamDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/FlinkSQL/TumbleWindowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/Model/CityTemperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/Model/TemperatureStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/Model/WaterSensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/State/AggregatingStateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/Windows/WindowOperatorExample.java" afterDir="false" />
+    <list default="true" id="c7059a1b-3004-4efc-92d4-4d37303f1d97" name="更改" comment="SQL API">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/flink/Job/Job1_PV_UV_1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/flink/DataStreamAPI/source/KafkaSourceConnectorJsonValueOnly.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +54,22 @@
     "Maven.bigdata-flink-main [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/project/bigdata-flink-main/src/main/java/com/example/flink/FlinkSQL",
+    "last_opened_file_path": "D:/project/bigdata-flink-main/src/main/java/com/example/flink/Job",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "应用程序.CollectionsSourceConnector.executor": "Run",
     "应用程序.DataStreamJob.executor": "Run",
     "应用程序.DataStreamUnion.executor": "Run",
     "应用程序.Demo1_TableSql.executor": "Run",
+    "应用程序.Job1_PVUV_1.executor": "Run",
+    "应用程序.Job1_PV_UV_1.executor": "Run",
+    "应用程序.Job1_PV_UV_2.executor": "Run",
     "应用程序.KafkaSourceConnectorJsonValueOnly.executor": "Run",
     "应用程序.KafkaSourceConnectorKeyAndValue.executor": "Run",
     "应用程序.KafkaSourceConnectorStringValueOnly.executor": "Run",
+    "应用程序.KafkaTest.executor": "Run",
     "应用程序.KeyByTransformation.executor": "Run",
     "应用程序.KeyedStreamRollingAggregation.executor": "Run",
     "应用程序.MapTransformation.executor": "Run",
@@ -90,6 +86,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\bigdata-flink-main\src\main\java\com\example\flink\Job" />
       <recent name="D:\project\bigdata-flink-main\src\main\java\com\example\flink\FlinkSQL" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -99,13 +96,13 @@
       <recent name="com.example.flink" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TableStreamDemo">
-    <configuration name="MyTableFunctionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.FlinkSQL.MyTableFunctionDemo" />
+  <component name="RunManager" selected="应用程序.KafkaTest">
+    <configuration name="Job1_PV_UV_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.Job.Job1_PV_UV_1" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flink.FlinkSQL.*" />
+          <option name="PATTERN" value="com.example.flink.Job.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +110,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StarRocksSinkConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.DataStreamAPI.sink.StarRocksSinkConnector" />
+    <configuration name="Job1_PV_UV_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.Job.Job1_PV_UV_2" />
       <module name="bigdata-flink-main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.flink.DataStreamAPI.sink.*" />
+          <option name="PATTERN" value="com.example.flink.Job.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.Job.KafkaTest" />
+      <module name="bigdata-flink-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.flink.Job.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTableFunctionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.flink.FlinkSQL.MyTableFunctionDemo" />
+      <module name="bigdata-flink-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.flink.FlinkSQL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,39 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TumbleWindowDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.FlinkSQL.TumbleWindowDemo" />
-      <module name="bigdata-flink-main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.flink.FlinkSQL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WindowOperatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.flink.Windows.WindowOperatorExample" />
-      <module name="bigdata-flink-main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.flink.Windows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.KafkaTest" />
+        <item itemvalue="应用程序.Job1_PV_UV_1" />
+        <item itemvalue="应用程序.Job1_PV_UV_2" />
         <item itemvalue="应用程序.TableStreamDemo" />
         <item itemvalue="应用程序.MyTableFunctionDemo" />
-        <item itemvalue="应用程序.TumbleWindowDemo" />
-        <item itemvalue="应用程序.WindowOperatorExample" />
-        <item itemvalue="应用程序.StarRocksSinkConnector" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757318929059</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SQL API">
+      <option name="closed" value="true" />
+      <created>1757474360657</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757474360657</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +238,7 @@
     <MESSAGE value="Flink工程初始化" />
     <MESSAGE value="StreamingWordCount打包并提交到FlinkWebUI" />
     <MESSAGE value="DataStream API" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataStream API" />
+    <MESSAGE value="SQL API" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQL API" />
   </component>
 </project>
